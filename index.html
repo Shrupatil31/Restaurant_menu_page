@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spice Delight — Restaurant Menu</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    // Smooth scroll for internal links
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click',(e)=>{
+          e.preventDefault();
+          const target = document.querySelector(a.getAttribute('href'));
+          if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img class="logo" src="https://images.deliveryhero.io/image/fd-op/LH/z3xi-listing.jpg" alt="Spice Delight logo">
+        <div>
+          <h1>Spice Delight</h1>
+          <p class="tag">Modern Indian Kitchen</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <a href="#special">Special</a>
+        <a href="#starters">Starters</a>
+        <a href="#main-course">Main Course</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Welcome to <span>Spice Delight</span></h2>
+          <p>Fine-tuned flavors, crafted with love. Explore our curated menu of starters, mains and desserts.</p>
+          <a class="btn" href="#special">See Today's Special</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://spicecravings.com/wp-content/uploads/2020/10/Paneer-Tikka-1.jpg" alt="Delicious Indian food plated">
+        </div>
+      </div>
+    </section>
+
+    <!-- Special of the day -->
+    <section id="special" class="special-section container" aria-labelledby="special-heading">
+      <h2 id="special-heading">🌟 Chef's Special of the Day</h2>
+      <article class="special-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJOLKIgAh-T960qU90g1dxSWzO1-oTm5JtA&s" alt="Butter Chicken - Chef's Special">
+        <div class="special-info">
+          <h3>Butter Chicken</h3>
+          <p class="desc">Tender chicken cooked in a smooth buttery tomato gravy — finished with cream and fenugreek.</p>
+          <p class="price">₹280</p>
+          <p class="small">Served with butter naan or steamed basmati rice.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Menu Grid -->
+    <section id="starters" class="menu container" aria-labelledby="starters-heading">
+      <h2 id="starters-heading">Starters</h2>
+      <div class="menu-grid">
+        <article class="menu-item">
+          <img src="https://media.istockphoto.com/id/1407355717/photo/crispy-onion-bhajis.jpg?s=612x612&w=0&k=20&c=ZIhRI4j1ifuKRbk_IdTE-dcS8v0WWlxhlvLwKNGhikw=" alt="Crispy Veg Pakora">
+          <div class="item-info">
+            <h3>Veg Pakora</h3>
+            <p class="desc">Crispy mixed-vegetable fritters served with tangy mint chutney.</p>
+          </div>
+          <div class="item-price">₹90</div>
+        </article>
+
+        <article class="menu-item">
+          <img src="https://spicecravings.com/wp-content/uploads/2020/10/Paneer-Tikka-1.jpg" alt="Paneer Tikka">
+          <div class="item-info">
+            <h3>Paneer Tikka</h3>
+            <p class="desc">Charred cubes of marinated cottage cheese, bell pepper & onion.</p>
+          </div>
+          <div class="item-price">₹140</div>
+        </article>
+
+        <article class="menu-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmJtLFvUiwcvLPLsafnOoAqsUMvFR6_DW6TQ&s" alt="Hara Bhara Kebab">
+          <div class="item-info">
+            <h3>Hara Bhara Kebab</h3>
+            <p class="desc">Spinach & peas patties, lightly spiced and shallow fried.</p>
+          </div>
+          <div class="item-price">₹110</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="main-course" class="menu container" aria-labelledby="main-heading">
+      <h2 id="main-heading">Main Course</h2>
+      <div class="menu-grid">
+        <article class="menu-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnDWcxE3nXYImBIy87369VvBja8vUKU5gbMg&s" alt="Dal Makhani">
+          <div class="item-info">
+            <h3>Dal Makhani</h3>
+            <p class="desc">Slow-cooked black lentils finished with butter and cream.</p>
+          </div>
+          <div class="item-price">₹190</div>
+        </article>
+
+        <article class="menu-item">
+          <img src="https://www.foodiaq.com/wp-content/uploads/2024/11/Chicken-Curry.jpg" alt="Chicken Curry">
+          <div class="item-info">
+            <h3>Chicken Curry</h3>
+            <p class="desc">Classic home-style chicken curry made with spices & roasted masala.</p>
+          </div>
+          <div class="item-price">₹230</div>
+        </article>
+
+        <article class="menu-item">
+          <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/paneer-butter-masala-recipe.jpg" alt="Paneer Butter Masala">
+          <div class="item-info">
+            <h3>Paneer Butter Masala</h3>
+            <p class="desc">Soft paneer cubes in a rich tomato-butter sauce.</p>
+          </div>
+          <div class="item-price">₹210</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="desserts" class="menu container" aria-labelledby="desserts-heading">
+      <h2 id="desserts-heading">Desserts</h2>
+      <div class="menu-grid desserts-grid">
+        <article class="menu-item dessert">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6etYce4wE9Wcu8oz5gRt2SJkeWNptWZvTyw&s" alt="Gulab Jamun">
+          <div class="item-info">
+            <h3>Gulab Jamun</h3>
+            <p class="desc">Soft milk dumplings soaked in warm saffron sugar syrup.</p>
+          </div>
+          <div class="item-price">₹75</div>
+        </article>
+
+        <article class="menu-item dessert">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkfdH0NpXrZ5rR06ZuVG0qUZAXNEs_GSokVg&s" alt="Rasmalai">
+          <div class="item-info">
+            <h3>Rasmalai</h3>
+            <p class="desc">Spongy cheese puffs in chilled cardamom milk.</p>
+          </div>
+          <div class="item-price">₹95</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact / About -->
+    <section id="contact" class="contact container" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">About & Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>About Spice Delight</h3>
+          <p>Spice Delight combines traditional Indian spices with modern plating and service. We source fresh ingredients and craft seasonal menus for memorable meals.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>📍 Belagavi, Karnataka<br>📞 +91 9022130330<br>✉️ spicedelight@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© 2025 Spice Delight • Designed by Shrutika Anil Patil</p>
+      <p class="small">Images via Wikimedia Commons • Sample for academic project.</p>
+    </div>
+  </footer>
+</body>
+</html>
